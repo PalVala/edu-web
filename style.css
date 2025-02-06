@@ -66,6 +66,14 @@ li{
 .grid-two--cols{
     grid-template-columns: repeat(2,1fr);
 }
+.grid-three--cols{
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.section-about .grid{
+    gap:6.4rem
+
+}
 .btn{
     display: inline-block;
     padding: 1.2rem 3.2rem;
@@ -166,4 +174,58 @@ main{
 
 .custom-shape-divider-bottom-1738875419 .shape-fill {
     fill: #FFFFFF;
+}
+/* reuseable part */
+.section-common-heading{
+    font-size: 4.8rem;
+    font-family: "jost";
+    font-weight: 400px;
+    text-transform: capitalize;
+}
+.section-commom-subheading{
+    color: var(--heading-color);
+    font-weight: 300px;
+    font-size: 2rem;
+}
+
+/* about section */
+.section-about .about-div {
+    text-align: center; /* Centers text (title & paragraph) */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon img {
+    max-width: 100%; /* Prevents overflow */
+    height: auto;
+    border-radius: 5%;
+    transition: transform 0.5s linear;
+}
+
+
+.icon{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    border-radius: 50%;
+    width: 15rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+
+.section-common-tittle{
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+.about-div:hover .icon img {
+    transform: rotate(360deg);
+}
+
+.about-div:hover .icon {
+    background: linear-gradient(to right,#0575e6,#021b79) /* Changes background on hover */
 }
