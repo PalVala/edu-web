@@ -51,12 +51,14 @@ li{
 .navbar-section{
     width: 100%;
     box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px,rgba(0,0,0,0.08) 0px 0px 0px 1px;
+    
 }
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.8rem 2.8rem;
+    padding: 1.2rem 2.8rem;
+    
     
     
 }
@@ -68,6 +70,12 @@ li{
 }
 .grid-three--cols{
     grid-template-columns: repeat(3,1fr);
+    
+}
+.grid-four--cols{
+    grid-template-columns: repeat(4,1fr);
+    
+    text-align: center;
     
 }
 .section-about .grid{
@@ -228,4 +236,32 @@ main{
 
 .about-div:hover .icon {
     background: linear-gradient(to right,#0575e6,#021b79) /* Changes background on hover */
+}
+
+/* course section styling */
+.fa-solid {
+    padding: 2rem;
+    background-color:var(--supporting-color);
+    color: var(--main-color);
+    font-size: 3.4rem;
+    border-radius: 50%;
+}
+.fa-brands{
+    padding: 2rem;
+    background-color:var(--supporting-color);
+    color: var(--main-color);
+    font-size: 3.4rem;
+    border-radius: 50%;
+}
+.course-div{
+    padding: 3.4rem;
+    height: 350px;
+}
+.section-course .grid{
+gap: 3.4rem;
+}
+.course-div:hover{
+    box-shadow: var(--btn-box-shadow);
+    cursor: pointer;
+
 }
