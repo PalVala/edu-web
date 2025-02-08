@@ -256,6 +256,9 @@ main{
 .course-div{
     padding: 3.4rem;
     height: 350px;
+    
+
+    
 }
 .section-course .grid{
 gap: 3.4rem;
@@ -264,4 +267,95 @@ gap: 3.4rem;
     box-shadow: var(--btn-box-shadow);
     cursor: pointer;
 
+}
+/** service section **/
+.text-highlight{
+    width: 6rem;
+    aspect-ratio: 1;
+    background-color: var(--supporting-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 1200px;
+    border-radius: 50%;
+}
+.choice-div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    text-align: right;
+   
+}
+.choice-div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+  
+
+}
+.section-choice .grid{
+    gap: 9.6rem;
+}
+.choose-left--div {
+    display: flex;
+    flex-direction: column;
+}
+.choice-center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+        height: 450px;
+    }
+}
+/** contact home section**/
+.section-contact-homepage{
+    width: 60%;
+   height: 30rem;
+    margin: 0 auto;
+    box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px,rgba(0,0,0,0.08) 4px 3px 4px 3px;
+    margin-bottom: 5rem;
+    border-radius: 2.5rem;
+
+    &.grid{
+        align-items: center;
+    }
+    & a{
+        color: white;
+        text-transform: capitalize;
+    }
+}
+.section-contact-homepage .fa-solid{
+    padding: 0;
+    color: white;
+    background-color: var(--main-color);
+    
+}
+.section-contact-homepage img{
+    height: 40%;
+    width: 60%;
+}
+.btn2{
+    display: inline-block;
+    padding: 1.2rem 2.2rem;
+    background-color:#2a7bf5;
+    
+    border-radius: 0.6rem;
+    -webkit-boarder-radius:0.6rem;
+    -moz-boarder-radius:0.6rem;
+    -ms-boarder-radius:0.6rem;
+    -o-boarder-radius:0.6rem;
+    
+}
+.contact-title{
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+.contact-content p{
+    margin: 1.2rem 0 2.4rem 0;
 }
