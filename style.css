@@ -18,7 +18,7 @@ h5,
 h6{
     font-family: "Poppins",sans-serif;
 }
-p,li,a{
+p,li,a,label{
     font-family:"Urbanist",sans-serif ;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
@@ -50,7 +50,7 @@ li{
 /* navbar section */
 .navbar-section{
     width: 100%;
-    box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px,rgba(0,0,0,0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px,rgba(0,0,0,0.08) 2px 3px 2px 3px;
     
 }
 .container{
@@ -239,6 +239,9 @@ main{
 }
 
 /* course section styling */
+.section-course{
+    background-color: #98dcfa;
+}
 .fa-solid {
     padding: 2rem;
     background-color:var(--supporting-color);
@@ -313,15 +316,67 @@ gap: 3.4rem;
         height: 450px;
     }
 }
+/* blog section */
+.section-blog{
+    &.grid{
+        gap:3rem;
+    }
+    
+    
+    & .contain{
+        padding: 2rem;
+    }
+    & .blog-date{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        & .fa-solid{
+            background-color: transparent;
+            color: #000a19;
+            padding: 0;
+        }
+    }
+    & .blog{
+        box-shadow: var(--btn-box-shadow);
+        width: 300px;
+        height: auto;
+        padding: 1rem 2rem 2rem;
+        transition: all 0.2s linear;
+        
+        & img{
+            width: 250px;
+            height: auto;
+        }
+        &:hover{
+            scale: 1.1;
+            cursor: pointer;
+        }
+    }
+
+    
+}
+.blog-content h3{
+    text-align: left;
+    font-family: "jost";
+    font-size: 3rem;
+}
+.section-blog img{
+    height: 100%;
+    width: auto;
+}
 /** contact home section**/
 .section-contact-homepage{
+    background-color:white;
     width: 60%;
    height: 30rem;
     margin: 0 auto;
     box-shadow: rgba(0,0,0,0.05) 0px 6px 24px 0px,rgba(0,0,0,0.08) 4px 3px 4px 3px;
     margin-bottom: 5rem;
     border-radius: 2.5rem;
+    position: relative;
+    bottom: -15rem;
 
+   
     &.grid{
         align-items: center;
     }
@@ -352,10 +407,113 @@ gap: 3.4rem;
     -o-boarder-radius:0.6rem;
     
 }
+input,textarea{
+    width: 100%;
+    padding: 1.4rem 2.4rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+}
+.btn-submit{
+    font-size: 1.8rem;
+    border: none;
+    text-transform: capitalize;
+}
 .contact-title{
     font-size: 3.8rem;
     line-height: 1.2;
 }
+.contact-content .grid{
+    gap:6.4rem;
+}
+::placeholder{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
 .contact-content p{
-    margin: 1.2rem 0 2.4rem 0;
+    margin: 1.2rem 0 1.4rem 0;
+}
+/* actual contact page */
+.mb-3{
+    
+    padding: 1.4rem 1.4rem;
+}
+label{
+    display: block;
+    text-transform: capitalize;
+}
+input,textarea{
+    width: 100%;
+}
+
+/* footer section */
+footer{
+   background-color:#0c2345;
+    padding-top: 15rem;
+    z-index: 0;
+
+    
+}
+footer, 
+footer p, 
+footer a, 
+footer li, 
+footer ul {
+    color: white !important;
+}
+
+.footer-subheading{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.footer-1--div p{
+    margin: 1rem 0 3.2rem 0;
+
+
+   
+}
+footer .grid{
+    text-align: right;
+}
+.footer-1--div{
+    text-align: left;
+    & .fa-brands{
+        width: 7rem;
+        height: 7rem;
+        
+        background-color: var(--supporting-color);
+        color: var(--bnt-hover-color);
+        border-radius: 50%;
+        align-items: center;
+        transition: all 0.3s linear;
+
+        &:hover{
+            color: var(--supporting-color);
+            background-color: #021b79;
+            rotate: 360deg;
+            cursor: pointer;
+        }
+        
+    }
+    & .social-footer--icons{
+        display: flex;
+        gap: 2rem;
+        justify-items: center;
+        align-items: center;
+
+       
+    }
+}
+input:focus-visible
+textarea:focus-visible{
+    outline: 0.2rem solid var(--bnt-hover-color);
+}
+ ::-webkit-scrollbar-track{
+ background-color: var(--supporting-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--heading-color);
 }
